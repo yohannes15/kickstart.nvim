@@ -53,7 +53,7 @@ Kickstart Guide:
     MOST IMPORTANTLY, we provide a keymap "<space>sh" to [s]earch the [h]elp documentation,
     which is very useful when you're not exactly sure of what you're looking for.
 
-If you experience any errors while trying to install kickstart, run `:checkhealth` for more info.
+If something looks wrong with tooling, run `:checkhealth` and `:checkhealth core` (this config).
 
 --]]
 
