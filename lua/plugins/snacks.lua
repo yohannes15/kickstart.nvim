@@ -14,6 +14,7 @@ return {
       statuscolumn = { enabled = true },
       bigfile = { enabled = true },
       quickfix = { enabled = true },
+      picker = { enabled = true },
     },
     keys = {
       -- Terminal
@@ -24,7 +25,7 @@ return {
 
       -- Git
       { "<leader>gb", function() Snacks.gitbrowse() end, desc = "[G]it [B]rowse" },
-      { "<leader>gl", function() Snacks.git.log() end, desc = "[G]it [L]og" },
+      { "<leader>gl", function() Snacks.picker.git_log() end, desc = "[G]it [L]og" },
     },
   },
 }
