@@ -9,6 +9,16 @@ function M.register(dap)
     {
       type = 'scala',
       request = 'launch',
+      name = 'Run with arguments',
+      metals = { runType = 'runOrTestFile' },
+      args = function()
+        local args_string = vim.fn.input('Arguments: ')
+        return vim.split(args_string, " ")
+      end,
+    },
+    {
+      type = 'scala',
+      request = 'launch',
       name = 'Run current file',
       metals = { runType = 'runOrTestFile' },
     },
@@ -23,7 +33,7 @@ function M.register(dap)
       request = 'launch',
       name = 'Test target',
       metals = { runType = 'testTarget' },
-    },
+    }
   }
 end
 
