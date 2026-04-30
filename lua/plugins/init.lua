@@ -17,9 +17,9 @@ return {
   unpack(require 'plugins.dap'),
   unpack(require 'plugins.nvim_metals'),
   unpack(require 'plugins.colorscheme'),
-  unpack(require 'plugins.mini'),
   unpack(require 'plugins.treesitter'),
   unpack(require 'plugins.render_markdown'),
+  unpack(require 'plugins.snacks'),
 
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!

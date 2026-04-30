@@ -28,6 +28,9 @@ return {
         { '<leader>s', group = '[S]earch', mode = { 'n', 'v' } },
         { '<leader>d', group = '[D]ebug' },
         { '<leader>t', group = '[T]rouble' },
+        { '<leader>g', group = '[G]it' },
+        { '<leader>u', group = '[U]nit/UI' },
+        { '<leader>b', group = '[B]uffer' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } }, -- Enable gitsigns recommended keymaps first
         { 'gl', group = 'LSP (language server)', mode = { 'n' } },
       },
