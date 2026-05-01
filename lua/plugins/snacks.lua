@@ -5,7 +5,18 @@ return {
     lazy = false,
     ---@type snacks.Config
     opts = {
-      terminal = { enabled = true }, --split/floating terminal
+      terminal = {
+        win = {
+          style = "float",
+          width = 0.8,
+          height = 0.8,
+          border = "rounded",
+          title = "  Terminal ",
+          title_pos = "center",
+          footer_keys = true,
+          backdrop = 60,
+        },
+      },
       indent = { enabled = true }, -- indent guides and scopes
       input = { enabled = true }, -- better input
       notifier = { enabled = true }, -- prettier notifier
